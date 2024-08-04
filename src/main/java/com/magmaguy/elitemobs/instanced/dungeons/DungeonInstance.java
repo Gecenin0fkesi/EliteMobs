@@ -164,7 +164,7 @@ public class DungeonInstance extends MatchInstance {
     public boolean addNewPlayer(Player player) {
         if (!super.addNewPlayer(player)) return false;
         if (levelSync > 0)
-            player.sendMessage("[EliteMobs] Dungeon difficulty is set to " + difficultyName + " ! Level sync caps your item level to " + levelSync + ".");
+            player.sendMessage("");
         return true;
     }
 
@@ -201,7 +201,7 @@ public class DungeonInstance extends MatchInstance {
             return;
         }
         announce(DungeonsConfig.getInstancedDungeonCompleteMessage());
-        announce("MagmaGuy's note: This is still a work in progress, please be patient! Hope you enjoyed your run.");
+        announce("");
         new BukkitRunnable() {
 
             @Override
